@@ -10,40 +10,42 @@
 <body>
     <div id="calculator">
         <div class="item">
-            <input type="text" placeholder="0" disabled="disabled">
+            <input id="results" type="text" placeholder="0" disabled="disabled">
         </div>
 
         <div class="item">
-            <button class="btn-clear">C</button>
-            <button>/</button>
-            <button>x</button>
+            <button onclick="computeC('actions','c')" class="btn-clear">C</button>
+            <button onclick="computeC('actions','/')">/</button>
+            <button onclick="computeC('actions','*')">x</button>
         </div>
 
         <div class="item">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
+            <button onclick="computeC('values',7)">7</button>
+            <button onclick="computeC('values',8)">8</button>
+            <button onclick="computeC('values',9)">9</button>
+            <button onclick="computeC('actions','-')">-</button>
         </div>
 
         <div class="item">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
+            <button onclick="computeC('values',4)">4</button>
+            <button onclick="computeC('values',5)">5</button>
+            <button onclick="computeC('values',6)">6</button>
+            <button onclick="computeC('actions','+')">+</button>
         </div>
 
         <div class="item">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="btn-equals">=</button>
+            <button onclick="computeC('values',1)">1</button>
+            <button onclick="computeC('values',2)">2</button>
+            <button onclick="computeC('values',3)">3</button>
+            <button onclick="computeC('actions','=')" class="btn-equals">=</button>
         </div>
         
         <div class="item format">
-            <button class="btn-zero">0</button>
-            <button class="btn-dot">.</button>   
+            <button onclick="computeC('values',0)" class="btn-zero">0</button>
+            <button onclick="computeC('actions','.')" class="btn-dot">.</button>   
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

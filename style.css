@@ -29,8 +29,8 @@ input {
     outline: none;
     border: 0;
     border: 2px solid #F2CB05;
-    border-radius: 10px;
-    background-color: #f0d654;
+    border-radius: 5px;
+    background-color: white;
     text-align: right;
     /* color: white; */
 }
@@ -42,7 +42,7 @@ button {
     border: 0;
     border: 1px solid #F2CB05;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px #F2E205;
+    box-shadow: 1px 1px 2px #F2E205;
     background-color: #F2CB05;
     color:#0424D9;
     transition: 1s;
