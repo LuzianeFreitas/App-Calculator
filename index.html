@@ -3,47 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Calculator</title>
 </head>
 <body>
-    <div id="container">
-        <div class="calculator">
-            <div class="visor">
-                <input type="text" placeholder="0" disabled="disabled">
-            </div>
+    <div id="calculator">
+        <div class="item">
+            <input type="text" placeholder="0" disabled="disabled">
+        </div>
 
-            <div class="div-one">
-                <button>C</button>
-                <button>/</button>
-                <button>x</button>
-            </div>
+        <div class="item">
+            <button class="btn-clear">C</button>
+            <button>/</button>
+            <button>x</button>
+        </div>
 
-            <div class="div-two">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>-</button>
-            </div>
+        <div class="item">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+        </div>
 
-            <div class="div-three">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>+</button>
-            </div>
+        <div class="item">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+        </div>
 
-            <div class="div-four">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>=</button>
-            </div>
-            
-            <div class="div-five">
-                <button>0</button>
-                <button>.</button>   
-            </div>  
-                      
+        <div class="item">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="btn-equals">=</button>
+        </div>
+        
+        <div class="item format">
+            <button class="btn-zero">0</button>
+            <button class="btn-dot">.</button>   
         </div>
     </div>
 </body>
